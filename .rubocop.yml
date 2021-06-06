@@ -58,3 +58,7 @@ Style/TrailingCommaInHashLiteral:
 
 Style/WordArray:
   Enabled: false
+
+Metrics/LineLength:
+  Max: 120
+
