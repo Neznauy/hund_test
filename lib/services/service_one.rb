@@ -15,7 +15,7 @@ module Services
 
     attr_accessor :params
     attr_writer :result
-
+    
     def name
       params[:name]
     end
