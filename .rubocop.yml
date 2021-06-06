@@ -1,3 +1,6 @@
+require:
+  - rubocop-shopify
+
 inherit_gem:
   rubocop-shopify: rubocop.yml
 
@@ -58,3 +61,6 @@ Style/TrailingCommaInHashLiteral:
 
 Style/WordArray:
   Enabled: false
+
+Layout/LineLength:
+  Max: 120
