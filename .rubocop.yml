@@ -1,5 +1,5 @@
-inherit_gem:
-  rubocop-shopify: rubocop.yml
+inherit_from:
+  - 'https://github.com/Shopify/ruby-style-guide/blob/v1.0.7/rubocop.yml'
 
 AllCops:
   NewCops: enable
@@ -58,3 +58,6 @@ Style/TrailingCommaInHashLiteral:
 
 Style/WordArray:
   Enabled: false
+
+Layout/LineLength:
+  Max: 120
