@@ -8,7 +8,7 @@ module Services
     end
 
     def call
-      self.result = !name.nil? && !value.nil?
+      self.result = !name.nil? && !value.nil? && test?
     end
 
     private
@@ -22,6 +22,10 @@ module Services
 
     def value
       params[:value]
+    end
+
+    def test?
+      params[:env] == :test                  
     end
   end
 end
