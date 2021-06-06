@@ -58,3 +58,6 @@ Style/TrailingCommaInHashLiteral:
 
 Style/WordArray:
   Enabled: false
+
+Layout/LineLength:
+  Max: 120
