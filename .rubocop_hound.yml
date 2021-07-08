@@ -86,3 +86,6 @@ RSpec/FactoryBot/AttributeDefinedStatically:
 RSpec/NestedGroups:
   Enabled: true
   Max: 5
+
+RSpec/LetSetup:
+  Enabled: false
