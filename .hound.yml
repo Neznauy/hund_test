@@ -1,0 +1,5 @@
+rubocop:
+  version: 1.5.2
+  config_file: .rubocop_hound.yml
+
+fail_on_violations: true

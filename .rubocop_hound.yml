@@ -1,0 +1,88 @@
+inherit_from:
+  - 'https://raw.githubusercontent.com/Shopify/ruby-style-guide/v1.0.7/rubocop.yml'
+
+require:
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rspec
+
+AllCops:
+  NewCops: enable
+  Exclude:
+    - ./**/schema.rb
+    - Gemfile
+    - bin/*
+    - bundle/**/*
+    - db/migrate/*
+    - vendor/**/*
+    - spec/fixtures/**/*
+
+Layout/SpaceInsideHashLiteralBraces:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 22
+
+Metrics/PerceivedComplexity:
+  Max: 8
+
+Metrics/CyclomaticComplexity:
+  Max: 7
+
+Metrics/ClassLength:
+  Max: 100
+  CountAsOne: ['array', 'hash', 'heredoc']
+
+Metrics/ModuleLength:
+  Max: 100
+  CountAsOne: ['array', 'hash', 'heredoc']
+
+Metrics/MethodLength:
+  Max: 10
+  CountAsOne: ['array', 'hash', 'heredoc']
+  Exclude:
+    - db/migrate/**/*
+
+Rails:
+  Enabled: true
+
+Rails/SquishedSQLHeredocs:
+  Enabled: false
+
+Style/AndOr:
+  Enabled: false
+
+Style/DateTime:
+  Enabled: false
+
+Style/MethodCallWithArgsParentheses:
+  Enabled: false
+
+Style/RedundantBegin:
+  Enabled: false
+
+Style/RedundantSelf:
+  Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+  ConsistentQuotesInMultiline: true
+
+Style/TrailingCommaInArrayLiteral:
+  Enabled: false
+
+Style/SymbolArray:
+  Enabled: false
+
+Style/TrailingCommaInHashLiteral:
+  Enabled: false
+
+Style/WordArray:
+  Enabled: false
+
+RSpec/FactoryBot/AttributeDefinedStatically:
+  Enabled: true
+
+RSpec/NestedGroups:
+  Enabled: true
+  Max: 5
