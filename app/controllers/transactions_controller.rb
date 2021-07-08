@@ -72,6 +72,10 @@ class TransactionsController < ApplicationController
     Time.now
   end
 
+  def new_rails_offense
+    Time.now
+  end
+
   def legacy_style_offense
     Rails.logger 'excess line'
     Rails.logger 'excess line'
@@ -88,5 +92,23 @@ class TransactionsController < ApplicationController
     Rails.logger 'excess line'
     Rails.logger 'excess line'
     Rails.logger 'excess line'
+  end
+
+  def new_style_offense
+    Rails.logger 'excess line'
+    Rails.logger 'excess line'
+    Rails.logger 'excess line'
+    Rails.logger 'excess line'
+    Rails.logger 'excess line'
+    Rails.logger 'excess line'
+    Rails.logger 'excess line'
+    Rails.logger 'excess line'
+    Rails.logger 'excess line'
+    Rails.logger 'excess line'
+    Rails.logger 'excess line'
+    Rails.logger 'excess line'
+    Rails.logger 'excess line'
+    Rails.logger 'excess line'
+    Rails.logger 'excess line'                                 
   end
 end
