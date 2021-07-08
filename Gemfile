@@ -33,7 +33,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 
   gem 'rubocop', '1.5.2', require: false
-  gem 'rubocop-rails', require: false
+  gem 'rubocop-rails'
   gem 'rubocop-rspec'
   gem 'rubocop-checkstyle_formatter'
   gem 'rubocop-performance', require: false

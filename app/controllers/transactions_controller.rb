@@ -57,13 +57,36 @@ class TransactionsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_transaction
-      @transaction = Transaction.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def transaction_params
-      params.require(:transaction).permit(:merchant_id, :customer_id, :amount, :currency)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_transaction
+    @transaction = Transaction.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def transaction_params
+    params.require(:transaction).permit(:merchant_id, :customer_id, :amount, :currency)
+  end
+
+  def legacy_rails_offense
+    Time.now
+  end
+
+  def legacy_style_offense
+    Rails.logger 'excess line'
+    Rails.logger 'excess line'
+    Rails.logger 'excess line'
+    Rails.logger 'excess line'
+    Rails.logger 'excess line'
+    Rails.logger 'excess line'
+    Rails.logger 'excess line'
+    Rails.logger 'excess line'
+    Rails.logger 'excess line'
+    Rails.logger 'excess line'
+    Rails.logger 'excess line'
+    Rails.logger 'excess line'
+    Rails.logger 'excess line'
+    Rails.logger 'excess line'
+    Rails.logger 'excess line'
+  end
 end
